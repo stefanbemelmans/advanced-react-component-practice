@@ -11,7 +11,9 @@ newTasks,
 newOrders,
 tickets,
 orders,
-taskItem
+taskItem,
+tasks,
+messages,
 } = store;
 
 ReactDOM.render(
@@ -22,6 +24,9 @@ ReactDOM.render(
     newTasks={newTasks}
     newOrders={newOrders}
     tickets={tickets}
-    orders={orders} />,
+    orders={orders} 
+    tasks={tasks}
+    messages={messages}
+    />,
   document.getElementById("root")
 );
