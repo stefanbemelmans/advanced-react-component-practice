@@ -42,8 +42,6 @@
 * Pass the newTasks prop from App to Tasks
 * Pass the newOrders prop from App to Orders
 * Pass the tickets prop from App to Tickets
-* Pass the dateTime prop from App to TopNav to MessagePreview to DateTime
-* Pass the taskItem prop from App to TaskPanel to TaskItem
 * Pass the orders prop from App to TransactionPanel
 * Pass the messages prop from App to TopNav
 * Pass the tasks prop from App to TaskPanel
@@ -59,7 +57,7 @@
 ### Use Props
 * TaskItem should use the task prop to populate the task name and the date
 * TransactionRow should use the order prop to populate the `<td>` s
-* MessagePreview should use the message prop to populate the 
+* MessagePreview should use the message prop to populate the name, date and message text
 
 ### Mapping
 * TasksPanel - map the array of "tasks" into array of TaskItem's. Pass one task into TaskItem
