@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "./index.css";
-import store from "./store";
+import state from "./state";
 
 const {
 dateTime,
@@ -14,7 +14,7 @@ orders,
 taskItem,
 tasks,
 messages,
-} = store;
+} = state;
 
 ReactDOM.render(
   <App 

@@ -45,6 +45,25 @@
 * Pass the dateTime prop from App to TopNav to MessagePreview to DateTime
 * Pass the taskItem prop from App to TaskPanel to TaskItem
 * Pass the orders prop from App to TransactionPanel
+* Pass the messages prop from App to TopNav
+* Pass the tasks prop from App to TaskPanel
 
+### Prop Types
+* TransactionRow should require one prop called "order" that is an object
+* TaskItem should require one prop called "task" that is an object
+* MessagePreview should require one prop called "message" that is an object
+* TopNav should require one prop called "messages" that is an array
+* TransactionPanel should require one prop called "orders" that is an array
+* TasksPanel should require one prop called "tasks" that is an array
+
+### Use Props
+* TaskItem should use the task prop to populate the task name and the date
+* TransactionRow should use the order prop to populate the `<td>` s
+* MessagePreview should use the message prop to populate the 
+
+### Mapping
+* TasksPanel - map the array of "tasks" into array of TaskItem's. Pass one task into TaskItem
+* TopNav - map the array of "messages" into array of MessagePreview's. Pass one message into MessagePreview
+* TransactionPanel - map the array of "orders" into array of TransactionRow's. Pass one order into TransactionRow
 
 
