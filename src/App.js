@@ -61,7 +61,7 @@ function App(props) {
 
               <div className="col-lg-4">
                 {/*   <TasksPanel>   */}
-                <TaskPanel />
+                <TaskPanel tasks={props.tasks} />
                 {/*   </TasksPanel>   */}
 
 
@@ -90,6 +90,7 @@ function App(props) {
 }
 
 App.propTypes = {
+  TaskPanel: PropTypes.arrayOf(,
   newComments: PropTypes.number,
   newTasks: PropTypes.number, 
   newOrders: PropTypes.number,
