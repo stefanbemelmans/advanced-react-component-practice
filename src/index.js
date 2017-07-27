@@ -15,7 +15,7 @@ taskItem,
 tasks,
 messages,
 } = state;
-
+console.log(state);
 ReactDOM.render(
   <App 
     taskItem={taskItem}

@@ -9,7 +9,7 @@ import AreaChart from "./components/AreaChart";
 import DonutChart from "./components/DonutChart";
 import TaskPanel from "./components/TaskPanel";
 import TransPanel from "./components/TransPanel";
-
+import PropTypes from "prop-types";
 function App(props) {
  
   return (
@@ -26,20 +26,20 @@ function App(props) {
             <div className="row">
 
               {/*   </Comments>   */}
-              <Comments />
+              <Comments newComments={props.newComments} />
               {/*   </Comments>   */}
 
               {/*   <Tasks>   */}
-              <Tasks />
+              <Tasks newTasks={props.newTasks} />
               {/*   </Tasks>   */}
 
               {/*   <Orders>   */}
-              <Orders /> 
+              <Orders newOrders={props.newOrders} /> 
               {/*   </Orders>   */}
 
 
               {/*   <Tickets>   */}
-              <Tickets />
+              <Tickets tickets={props.tickets} />
               {/*   </Tickets>   */}
 
 
@@ -90,6 +90,14 @@ function App(props) {
 }
 
 App.propTypes = {
+  newComments: PropTypes.number,
+  newTasks: PropTypes.number, 
+  newOrders: PropTypes.number,
+  tickets: PropTypes.number,
+  taskItem: PropTypes.string,
+  tasks: PropTypes.array,
+  messages: PropTypes.array,
+  orders: PropTypes.array
 
 };
 
