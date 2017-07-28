@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function TaskItem(props) {
   return (
@@ -8,4 +9,8 @@ export default function TaskItem(props) {
     </a>
 
   );
+}
+
+TaskItem.propTypes = {
+  task: PropTypes.object.isRequired
 }
