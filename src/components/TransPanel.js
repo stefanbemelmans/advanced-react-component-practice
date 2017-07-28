@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import TransRow from "./TransRow";
 
 export default function TransPanel(props) {
@@ -20,7 +21,7 @@ export default function TransPanel(props) {
             </thead>
             <tbody>
               {/*   <TransactionRow>   */}
-              <TransRow />
+              <TransRow order={props.order} />
               {/*   </TransactionRow>   */}
             </tbody>
           </table>
@@ -34,4 +35,8 @@ export default function TransPanel(props) {
 
   );
 
+}
+
+TransPanel.propTypes = {
+  order: PropTypes.object.isRequired
 }

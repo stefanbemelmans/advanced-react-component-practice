@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types"
 export default function TransRow(props) {
   return (
     <tr>
@@ -12,4 +12,8 @@ export default function TransRow(props) {
   );
 
 
+}
+
+TransRow.propTypes = {
+  order: PropTypes.object.isRequired
 }

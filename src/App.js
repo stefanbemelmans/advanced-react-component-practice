@@ -11,9 +11,9 @@ import TaskPanel from "./components/TaskPanel";
 import TransPanel from "./components/TransPanel";
 import PropTypes from "prop-types";
 function App(props) {
- 
+
   return (
-    <div> 
+    <div>
       <div id="wrapper">
         <Navs />
 
@@ -21,8 +21,8 @@ function App(props) {
 
           <div className="container-fluid">
 
-            <DashBoard />    
-            
+            <DashBoard />
+
             <div className="row">
 
               {/*   </Comments>   */}
@@ -34,7 +34,7 @@ function App(props) {
               {/*   </Tasks>   */}
 
               {/*   <Orders>   */}
-              <Orders newOrders={props.newOrders} /> 
+              <Orders newOrders={props.newOrders} />
               {/*   </Orders>   */}
 
 
@@ -46,7 +46,7 @@ function App(props) {
 
 
             </div>
-                
+
             {/*   <AreaChart>   */}
             <AreaChart />
             {/*   </AreaChart>   */}
@@ -75,13 +75,13 @@ function App(props) {
 
               </div>
             </div>
-                
+
 
           </div>
-            
+
 
         </div>
-        
+
 
       </div>
     </div>
@@ -90,9 +90,9 @@ function App(props) {
 }
 
 App.propTypes = {
-  TaskPanel: PropTypes.arrayOf(,
+  
   newComments: PropTypes.number,
-  newTasks: PropTypes.number, 
+  newTasks: PropTypes.number,
   newOrders: PropTypes.number,
   tickets: PropTypes.number,
   taskItem: PropTypes.string,
