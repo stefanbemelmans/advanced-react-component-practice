@@ -23,3 +23,7 @@ export default function MessagePreview(props){
    </li>
   );
 }
+
+MessagePreview.propTypes = {
+  message: PropTypes.object.isRequired
+}
