@@ -38,5 +38,5 @@ export default function TransPanel(props) {
 }
 
 TransPanel.propTypes = {
-  order: PropTypes.object.isRequired
+  orders: PropTypes.array.isRequired
 }

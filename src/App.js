@@ -70,7 +70,7 @@ function App(props) {
 
 
                 {/*   </TransactionsPanel>   */}
-                <TransPanel />
+                <TransPanel orders={props.orders} />
                 {/*   </TransactionsPanel>   */}
 
               </div>
