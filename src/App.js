@@ -15,8 +15,8 @@ function App(props) {
   return (
     <div>
       <div id="wrapper">
-        <Navs />
-
+        <Navs messages={props.messages} />
+          console.log(props.messages);
         <div id="page-wrapper">
 
           <div className="container-fluid">

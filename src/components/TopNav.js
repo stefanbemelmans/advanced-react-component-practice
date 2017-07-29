@@ -10,7 +10,7 @@ function TopNav() {
           <ul className="dropdown-menu message-dropdown">
 
               {/*  <MessagePreview>   */}
-              <MessagePreview />
+              <MessagePreview message={props.messages} />
               {/*  </MessagePreview>   */}
 
 

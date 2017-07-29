@@ -2,7 +2,7 @@ import React from "react";
 import TaskItem from "./TaskItem";
 
 export default function TaskPanel(props) {
-  return (
+   return (
     <div className="panel panel-default">
       <div className="panel-heading">
         <h3 className="panel-title"><i className="fa fa-clock-o fa-fw" /> Tasks Panel</h3>
@@ -10,7 +10,7 @@ export default function TaskPanel(props) {
       <div className="panel-body">
         <div className="list-group">
           {/*   <TaskItem>    */}
-          <TaskItem />
+          <TaskItem  tasks={props.tasks} />
           {/*   </TaskItem>    */}
                         
         </div>

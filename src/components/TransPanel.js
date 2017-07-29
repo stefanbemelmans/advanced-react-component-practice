@@ -21,7 +21,7 @@ export default function TransPanel(props) {
             </thead>
             <tbody>
               {/*   <TransactionRow>   */}
-              <TransRow order={props.order} />
+              <TransRow order={props.orders[0]} />
               {/*   </TransactionRow>   */}
             </tbody>
           </table>

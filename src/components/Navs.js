@@ -6,7 +6,7 @@ export default function Navs(props){
   return (
     <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
       {/*   <TopNav>   */}
-      <TopNav />
+      <TopNav messages={props.messages} />
       {/*   </TopNav>   */}
 
 
