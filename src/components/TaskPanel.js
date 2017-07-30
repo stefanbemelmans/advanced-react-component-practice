@@ -2,6 +2,11 @@ import React from "react";
 import TaskItem from "./TaskItem";
 
 export default function TaskPanel(props) {
+
+  let mapTasks = props.tasks.map(x => {return (
+    <TaskItem task={x.task} date={x.date} />
+  )})
+  
    return (
     <div className="panel panel-default">
       <div className="panel-heading">
@@ -10,9 +15,9 @@ export default function TaskPanel(props) {
       <div className="panel-body">
         <div className="list-group">
           {/*   <TaskItem>    */}
-          <TaskItem  tasks={props.tasks} />
+          {mapTasks[2]}
           {/*   </TaskItem>    */}
-                        
+
         </div>
         <div className="text-right">
           <a href="#">View All Activity <i className="fa fa-arrow-circle-right" /></a>

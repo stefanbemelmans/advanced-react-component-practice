@@ -24,12 +24,6 @@ export default function MessagePreview(props){
   );
 }
 
-<<<<<<< HEAD
 MessagePreview.propTypes = {
   message: PropTypes.object.isRequired
 }
-=======
-// MessagePreview.propTypes = {
-//   message: PropTypes.object.isRequired
-// }
->>>>>>> b6bb91a1c4efbba5be90deb4044e64b5cdf85a89
