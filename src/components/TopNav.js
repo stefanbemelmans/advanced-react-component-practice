@@ -4,6 +4,10 @@ import MessagePreview from "./MessagePreview";
 
 
 export default function TopNav(props) {
+   let mapMess = props.messages.map(x => {return(
+        <MessagePreview name={x.name} date={x.date} message={x.message} />
+    )
+    })
   return (
     <ul className="nav navbar-right top-nav">
       <li className="dropdown">
@@ -12,7 +16,7 @@ export default function TopNav(props) {
             
                
               {/*  <MessagePreview>   */}
-                 <MessagePreview message={props.messages[0]}  /> 
+                 {mapMess[2]} 
               {/*  </MessagePreview>   */}
 
 

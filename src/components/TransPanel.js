@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 import TransRow from "./TransRow";
 
 export default function TransPanel(props) {
+  let mapOrders = props.orders.map(x => {return(
+    <TransRow id={x.id} orderDate={x.orderDate} orderTime={x.orderTime} amount={x.amount} />
+  )})
   return (
     <div className="panel panel-default">
       <div className="panel-heading">
@@ -21,7 +24,7 @@ export default function TransPanel(props) {
             </thead>
             <tbody>
               {/*   <TransactionRow>   */}
-              <TransRow order={props.orders[0]} />
+             {mapOrders[2]}
               {/*   </TransactionRow>   */}
             </tbody>
           </table>

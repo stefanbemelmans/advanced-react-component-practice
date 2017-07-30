@@ -11,12 +11,12 @@ export default function MessagePreview(props){
                 <img className="media-object" src="http://placehold.it/50x50" alt="" />
             </span>
             <div className="media-body">
-                <h5 className="media-heading"><strong>{props.message.name}</strong>
+                <h5 className="media-heading"><strong>{props.name}</strong>
                 </h5>
                 {/*  <DateTime>   */}
-                <DateTime date={props.message.date}/>
+                <DateTime date={props.date}/>
                 {/*  </DateTime>   */}
-                <p>{props.message.message}</p>
+                <p>{props.message}</p>
             </div>
         </div>
      </a>
@@ -25,5 +25,7 @@ export default function MessagePreview(props){
 }
 
 MessagePreview.propTypes = {
-  message: PropTypes.object.isRequired
+  name: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  message: PropTypes.string.isRequired
 }

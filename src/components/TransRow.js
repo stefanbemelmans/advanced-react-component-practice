@@ -3,10 +3,10 @@ import PropTypes from "prop-types"
 export default function TransRow(props) {
   return (
     <tr>
-      <td>{props.order.id}</td>
-      <td>{props.order.orderDate}</td>
-      <td>{props.order.orderTime}</td>
-      <td>{props.order.amount}</td>
+      <td>{props.id}</td>
+      <td>{props.orderDate}</td>
+      <td>{props.orderTime}</td>
+      <td>{props.amount}</td>
     </tr>
 
   );
@@ -15,5 +15,7 @@ export default function TransRow(props) {
 }
 
 TransRow.propTypes = {
-  order: PropTypes.object.isRequired
+id: PropTypes.number.isRequired,
+orderDate: PropTypes.string.isRequired,
+orderTime: PropTypes.string.isRequired,
 }

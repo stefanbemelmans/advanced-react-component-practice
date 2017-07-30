@@ -10,7 +10,7 @@ import DonutChart from "./components/DonutChart";
 import TaskPanel from "./components/TaskPanel";
 import TransPanel from "./components/TransPanel";
 import PropTypes from "prop-types";
-function App(props) {
+export default function App(props) {
 
   return (
     <div>
@@ -102,4 +102,4 @@ App.propTypes = {
 
 };
 
-export default App;
+
