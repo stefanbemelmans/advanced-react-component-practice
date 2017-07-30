@@ -14,9 +14,9 @@ export default function MessagePreview(props){
                 <h5 className="media-heading"><strong>{props.message.name}</strong>
                 </h5>
                 {/*  <DateTime>   */}
-                <DateTime date={props.message.date} />
+                <DateTime date={props.message.date}/>
                 {/*  </DateTime>   */}
-                <p>{props.message.message}.</p>
+                <p>{props.message.message}</p>
             </div>
         </div>
      </a>
@@ -24,6 +24,6 @@ export default function MessagePreview(props){
   );
 }
 
-MessagePreview.propTypes = {
-  message: PropTypes.object.isRequired
-}
+// MessagePreview.propTypes = {
+//   message: PropTypes.object.isRequired
+// }
